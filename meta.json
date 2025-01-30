@@ -1,13 +1,15 @@
 {
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "viam-demo:refill-controller",
-  "visibility": "private",
-  "url": "",
+  "visibility": "public",
+  "url": "https://github.com/viam-devrel/refill-controller",
   "description": "Modular generic service: refiller",
   "models": [
     {
       "api": "rdk:service:generic",
-      "model": "viam-demo:refill-controller:refiller"
+      "model": "viam-demo:refill-controller:refiller",
+      "short_description": "Automatically run a motor based on classifications from a vision service",
+      "markdown_link": "README.md#model-viam-demorefill-controllerrefiller"
     }
   ],
   "entrypoint": "dist/main",
