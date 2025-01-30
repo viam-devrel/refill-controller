@@ -1,0 +1,12 @@
+{
+  "module_name": "refill-controller",
+  "namespace": "viam-demo",
+  "language": "python",
+  "resource_type": "service",
+  "resource_subtype": "generic",
+  "model_name": "refiller",
+  "enable_cloud_build": true,
+  "initialize_git": false,
+  "generator_version": "0.1.0",
+  "generated_on": "2025-01-29T21:41:12.10181Z"
+}
