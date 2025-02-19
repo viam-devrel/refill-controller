@@ -19,6 +19,8 @@ from viam.utils import struct_to_dict, ValueTypes
 
 LOGGER = getLogger("refill-controller")
 
+__VERSION__ = "0.2.0"
+
 
 class Refiller(Generic, EasyResource):
     MODEL: ClassVar[Model] = Model(
@@ -104,6 +106,7 @@ class Refiller(Generic, EasyResource):
         self.vision = cast(Vision, vision_resource)
 
         self.confidence_level = float(attrs.get("confidence_level", 0.55))
+        self.auto_start = bool(attrs.get("auto_start", True))
 
         if self.auto_start:
             self.start()

@@ -24,7 +24,8 @@ The following attributes are available for `viam-demo:refill-controller:refiller
 | `camera_name` | string | Required | N/A | The name of the camera component to use to get images. |
 | `motor_name` | string | Required | N/A | The name of the motor component to use to dispense snacks. |
 | `vision_name` | string | Required | N/A | The name of the vision service to use to get classifications using the image from the camera. |
-| `confidence_level` | number | Optional | 0.55 | Number between 0 and 1 as a minimum percentage of confidence for the returned classifications from the vision service |
+| `confidence_level` | number | Optional | 0.55 | Number between 0 and 1 as a minimum percentage of confidence for the returned classifications from the vision service. |
+| `auto_start` | boolean | Optional | true | Set the control loop to automatically start when the machine is powered on. |
 
 ### Example configuration
 
