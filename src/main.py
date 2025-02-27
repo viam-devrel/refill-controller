@@ -31,7 +31,7 @@ class Refiller(Generic, EasyResource):
     event = Event()
     auto_start = False
     rpm = 60
-    rev = 10
+    rev = 4
 
     @classmethod
     def new(
